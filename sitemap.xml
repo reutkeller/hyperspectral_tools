@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://reutkeller.github.io/hyperspectral_tools/utils.html</loc>
+    <lastmod>2024-01-30T09:39:06.057Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reutkeller.github.io/hyperspectral_tools/constants.html</loc>
+    <lastmod>2024-01-30T09:39:06.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reutkeller.github.io/hyperspectral_tools/core.html</loc>
+    <lastmod>2024-01-30T09:39:06.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reutkeller.github.io/hyperspectral_tools/clean_data.html</loc>
+    <lastmod>2024-01-30T09:39:06.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reutkeller.github.io/hyperspectral_tools/resample.html</loc>
+    <lastmod>2024-01-30T09:39:06.037Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reutkeller.github.io/hyperspectral_tools/index.html</loc>
+    <lastmod>2024-01-30T09:39:06.049Z</lastmod>
+  </url>
+</urlset>

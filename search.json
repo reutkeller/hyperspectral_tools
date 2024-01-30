@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "clean_data.html",
+    "href": "clean_data.html",
+    "title": "Clean data",
+    "section": "",
+    "text": "df = pd.read_csv(\"data\\samples_with oil_contaimated.csv\").T\ndf.columns = df.iloc[0,:]\ndf=df.iloc[1:,:]\ndf.to_csv(\"data\\original\\processesed\\samples_with oil_contaimated.csv\")\n\n&lt;&gt;:1: SyntaxWarning: invalid escape sequence '\\s'\n&lt;&gt;:4: SyntaxWarning: invalid escape sequence '\\o'\n&lt;&gt;:1: SyntaxWarning: invalid escape sequence '\\s'\n&lt;&gt;:4: SyntaxWarning: invalid escape sequence '\\o'\nC:\\Users\\USER\\AppData\\Local\\Temp\\ipykernel_14312\\876116856.py:1: SyntaxWarning: invalid escape sequence '\\s'\n  df = pd.read_csv(\"data\\samples_with oil_contaimated.csv\").T\nC:\\Users\\USER\\AppData\\Local\\Temp\\ipykernel_14312\\876116856.py:4: SyntaxWarning: invalid escape sequence '\\o'\n  df.to_csv(\"data\\original\\processesed\\samples_with oil_contaimated.csv\")\n\n\n\n# df = pd.read_csv(\"data\\cleansamples_209.csv\").T\n# df.columns = df.iloc[0,:]\n# df=df.iloc[1:,:]\n# df.to_csv(\"data\\original\\processesed\\cleansamples_209.csv\")\n\n&lt;&gt;:1: SyntaxWarning: invalid escape sequence '\\c'\n&lt;&gt;:4: SyntaxWarning: invalid escape sequence '\\o'\n&lt;&gt;:1: SyntaxWarning: invalid escape sequence '\\c'\n&lt;&gt;:4: SyntaxWarning: invalid escape sequence '\\o'\nC:\\Users\\USER\\AppData\\Local\\Temp\\ipykernel_14312\\2009996012.py:1: SyntaxWarning: invalid escape sequence '\\c'\n  df = pd.read_csv(\"data\\cleansamples_209.csv\").T\nC:\\Users\\USER\\AppData\\Local\\Temp\\ipykernel_14312\\2009996012.py:4: SyntaxWarning: invalid escape sequence '\\o'\n  df.to_csv(\"data\\original\\processesed\\cleansamples_209.csv\")",
+    "crumbs": [
+      "Clean data"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "hyperspectral_tools",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "hyperspectral_tools"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "hyperspectral_tools",
+    "section": "Install",
+    "text": "Install\npip install hyperspectral_tools",
+    "crumbs": [
+      "hyperspectral_tools"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "hyperspectral_tools",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "hyperspectral_tools"
+    ]
+  }
+]

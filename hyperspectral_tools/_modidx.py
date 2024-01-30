@@ -6,5 +6,10 @@ d = { 'settings': { 'branch': 'main',
                 'git_url': 'https://github.com/reutkeller/hyperspectral_tools',
                 'lib_path': 'hyperspectral_tools'},
   'syms': { 'hyperspectral_tools.clean_data': {},
+            'hyperspectral_tools.const_vals': {},
             'hyperspectral_tools.core': {'hyperspectral_tools.core.foo': ('core.html#foo', 'hyperspectral_tools/core.py')},
-            'hyperspectral_tools.resample_img': {}}}
+            'hyperspectral_tools.resample_img': { 'hyperspectral_tools.resample_img.Resample': ( 'resample.html#resample',
+                                                                                                 'hyperspectral_tools/resample_img.py'),
+                                                  'hyperspectral_tools.resample_img.Resample.__init__': ( 'resample.html#resample.__init__',
+                                                                                                          'hyperspectral_tools/resample_img.py')},
+            'hyperspectral_tools.utils_func': {}}}

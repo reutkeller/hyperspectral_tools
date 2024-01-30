@@ -6,14 +6,15 @@ __all__ = ['Resample']
 # %% ../nbs/resample.ipynb 3
 import numpy as np
 import pandas as pd
-from spectral import *
+from spectral import BandResampler
 
 # %% ../nbs/resample.ipynb 4
 class Resample():
 
   def __init__(self,
                path_to_spectrum : str , #Path to a CSV file containing spectral bands as float values stored as strings. Ensure that only columns with spectral data have digit-only names strings.
-
+               bands_center : list , # list of band center of specific sensor
+               fwhm : list , # 
                ):
           
           #read the dataframe
@@ -25,6 +26,16 @@ class Resample():
           #save the non spectral data
           self.non_spectral_data =init_df.loc[:, init_df.columns[~init_df.columns.str.isdigit()]]
 
+          #spectrum lists
+          self.center_bands = bands_center
+          self.fwhm = fwhm
+
+  def resample(self):
+      resampled_df = BandResampler(self.df.columns.tolist(), 
+                                   self.center_bands, 
+                                   fwhm1=None, 
+                                   fwhm2=self.fwhm)
+      
+      return resampled_df
   
 
-  

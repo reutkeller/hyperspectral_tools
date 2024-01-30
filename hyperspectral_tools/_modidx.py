@@ -11,5 +11,7 @@ d = { 'settings': { 'branch': 'main',
             'hyperspectral_tools.resample_img': { 'hyperspectral_tools.resample_img.Resample': ( 'resample.html#resample',
                                                                                                  'hyperspectral_tools/resample_img.py'),
                                                   'hyperspectral_tools.resample_img.Resample.__init__': ( 'resample.html#resample.__init__',
+                                                                                                          'hyperspectral_tools/resample_img.py'),
+                                                  'hyperspectral_tools.resample_img.Resample.resample': ( 'resample.html#resample.resample',
                                                                                                           'hyperspectral_tools/resample_img.py')},
             'hyperspectral_tools.utils_func': {}}}

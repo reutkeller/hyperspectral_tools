@@ -7,6 +7,10 @@ __all__ = ['Resample']
 import numpy as np
 import pandas as pd
 from spectral import BandResampler
+import matplotlib.pyplot as plt
+
+
+from . import const_vals as CONST
 
 # %% ../nbs/resample.ipynb 4
 class Resample():
@@ -30,12 +34,33 @@ class Resample():
           self.center_bands = bands_center
           self.fwhm = fwhm
 
-  def resample(self):
-      resampled_df = BandResampler(self.df.columns.tolist(), 
+          # Call resample_data method 
+          self.resampled_df = self.resample_data()
+
+          # Merge the non spectral data with spectral data
+          self.resampled_final = self.merge_resample_with_original_data()
+
+
+  def resample_data(self):
+      resampler = BandResampler(self.df.columns.tolist(), 
                                    self.center_bands, 
                                    fwhm1=None, 
                                    fwhm2=self.fwhm)
-      
-      return resampled_df
+      collect_res=[]
+      for index,row in self.df.iterrows():
+           tmp=self.df.iloc[index].values
+           resampled_res=resampler(tmp)
+           collect_res.append(resampled_res)
+
+      self.resampled_data=pd.DataFrame(collect_res,columns=self.center_bands)
+
+      return self.resampled_data
   
+  def merge_resample_with_original_data(self):
+       self.df_resampled_final =pd.concat([self.non_spectral_data,self.resampled_df],axis=1)
+
+       return self.df_resampled_final
+           
+  
+
 

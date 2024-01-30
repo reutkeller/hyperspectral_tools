@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "hyperspectral_tools"
+  site-url: "https://reutkeller.github.io/hyperspectral_tools"
+  description: "hyperspectral tools"
+  repo-branch: main
+  repo-url: "https://github.com/reutkeller/hyperspectral_tools"

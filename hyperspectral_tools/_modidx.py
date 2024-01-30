@@ -5,4 +5,6 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://reutkeller.github.io',
                 'git_url': 'https://github.com/reutkeller/hyperspectral_tools',
                 'lib_path': 'hyperspectral_tools'},
-  'syms': {'hyperspectral_tools.core': {'hyperspectral_tools.core.foo': ('core.html#foo', 'hyperspectral_tools/core.py')}}}
+  'syms': { 'hyperspectral_tools.clean_data': {},
+            'hyperspectral_tools.core': {'hyperspectral_tools.core.foo': ('core.html#foo', 'hyperspectral_tools/core.py')},
+            'hyperspectral_tools.resample_img': {}}}
